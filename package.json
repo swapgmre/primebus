@@ -1,0 +1,25 @@
+{
+  "name": "prime-bus",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node src/app.js",
+    "dev": "nodemon src/app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/swapgmre/primebus.git"
+  },
+  "author": "Swapnil",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/swapgmre/primebus/issues"
+  },
+  "homepage": "https://github.com/swapgmre/primebus#readme",
+  "dependencies": {
+    "express": "^4.21.1",
+    "mongoose": "^8.7.1",
+    "nodemon": "^3.1.7"
+  }
+}
