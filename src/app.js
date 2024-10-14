@@ -5,12 +5,7 @@ const app = express();
 
 
 app.post("/signup", async (req, res) => {
-  const user = new User({
-    firstName: "Swapnil",
-    lastName: "Gamre",
-    emailId: "user1@gmail.com",
-    password: "ghbjjndsdnd"
-  });
+  const user = new User(req.body);
   try {
     await user.save();
     res.send("User added Succesfully!!");
@@ -18,6 +13,11 @@ app.post("/signup", async (req, res) => {
     res.status(400).send(`Error saving the user: ${err.message}`)
   };
 });
+
+
+app.post("/login", async (req, res) => {
+
+})
 
 
 connectDB().then(() => {
